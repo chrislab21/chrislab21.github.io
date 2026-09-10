@@ -1,20 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── WORK GRID: HOVER VIDEO PREVIEW ──
-  document.querySelectorAll('.work-item').forEach(item => {
-    const video = item.querySelector('.thumb-video');
-    const still = item.querySelector('.thumb-still');
-    if (!video || !still) return;
-    item.addEventListener('mouseenter', () => {
-      video.currentTime = 0;
-      video.play();
-      video.style.opacity = '1';
+  // Only wire this up on devices that actually support hover (mouse/trackpad).
+  // Touch devices don't reliably fire mouseenter/mouseleave, so there's no point
+  // paying the video-loading cost there.
+  const canHover = window.matchMedia('(hover: hover)').matches;
+
+  if (canHover) {
+    document.querySelectorAll('.work-item').forEach(item => {
+      const video = item.querySelector('.thumb-video');
+      const still = item.querySelector('.thumb-still');
+      if (!video || !still) return;
+      item.addEventListener('mouseenter', () => {
+        video.currentTime = 0;
+        video.play();
+        video.style.opacity = '1';
+      });
+      item.addEventListener('mouseleave', () => {
+        video.pause();
+        video.style.opacity = '0';
+      });
     });
-    item.addEventListener('mouseleave', () => {
-      video.pause();
-      video.style.opacity = '0';
-    });
-  });
+  }
 
   // ── REEL EMBED (reel page) ──
   const reelBtn = document.getElementById('reelPlayBtn');
