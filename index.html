@@ -8,7 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/sf-font@1.0.0/stylesheet.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css"/>
+
 </head>
 <body>
 
@@ -26,7 +28,8 @@
 
     <nav class="header-nav">
       <a href="index.html" class="is-active">Work</a>
-      <a href="design.html">Design</a>
+      <a href="design.html">Play</a>
+      <a href="reel.html">Reel</a>
       <a href="about.html">About</a>
     </nav>
   </div>
@@ -34,31 +37,33 @@
 
 <main>
 
-  <div class="reel-text">
-   <h1>Showcase Reel</h1>
-  </div>
-
-  <section class="reel-section">
-    <div class="reel-frame" id="reelWrap">
-      <div class="reel-poster" id="reelPlaceholder">
-        <img src="reel-thumb.png" alt="Animation reel preview"/>
-        <button class="reel-play" id="reelPlayBtn" aria-label="Play reel">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </button>
-      </div>
-    </div>
-  </section>
-
 
   <div class="work-grid">
 
-      <a class="work-item" href="project-codeathon-hp.html">
-        <div class="work-title">Codeathon 2025</div>
+      <a class="work-item" href="project-spiderbots.html">
+        <div class="work-title">Codeathon 2024</div>
         <div class="work-thumb">
-          <img class="thumb-still" src="codeathon-hp.png" alt="VFX Tracking / Mograph" loading="lazy"/>
-          <video class="thumb-video" loop muted playsinline preload="none"><source src="codeathon-hp-thumb.webm" type="video/webm"/></video>
+          <img class="thumb-still" src="spiderbots.png" alt="3D Animation" loading="lazy"/>
+          <video class="thumb-video" loop muted playsinline preload="none"><source src="codeathon-fallout-thumb.webm" type="video/webm"/></video>
         </div>
         <div class="work-caption"><span class="work-type">VFX, Rigging, Animation</span></div>
+      </a>
+
+      <a class="work-item" href="project-iwant2.html">
+        <div class="work-title">Know it All with IWant® TV Ad</div>
+        <div class="work-thumb">
+          <img class="thumb-still" src="iwant-commercial2.png" alt="3D Tracking" loading="lazy"/>
+          <video class="thumb-video" loop muted playsinline preload="none"><source src="iwant-commercial2.webm" type="video/webm"/></video>
+        </div>
+        <div class="work-caption"><span class="work-type">Screen Replacement VFX / Motion Graphics</span></div>
+      </a>
+      <a class="work-item" href="project-rotoscope.html">
+        <div class="work-title">Beti Animated Story</div>
+        <div class="work-thumb">
+          <img class="thumb-still" src="rotoscope.png" alt="Hand Animation" loading="lazy"/>
+          <video class="thumb-video" loop muted playsinline preload="none"><source src="rotoscope-thumb.webm" type="video/webm"/></video>
+        </div>
+        <div class="work-caption"><span class="work-type">Hand Animation</span></div>
       </a>
 
       <a class="work-item" href="project-jdub.html">
@@ -70,15 +75,6 @@
         <div class="work-caption"><span class="work-type">After Effects</span></div>
       </a>
 
-      <a class="work-item" href="project-spiderbots.html">
-        <div class="work-title">Codeathon 2024</div>
-        <div class="work-thumb">
-          <img class="thumb-still" src="spiderbots.png" alt="3D Animation" loading="lazy"/>
-          <video class="thumb-video" loop muted playsinline preload="none"><source src="codeathon-fallout-thumb.webm" type="video/webm"/></video>
-        </div>
-        <div class="work-caption"><span class="work-type">VFX, Rigging, Animation</span></div>
-      </a>
-
       <a class="work-item" href="project-hotel-chaos.html">
         <div class="work-title">Hotel Chaos</div>
         <div class="work-thumb">
@@ -88,22 +84,14 @@
         <div class="work-caption"><span class="work-type">Hand Animation</span></div>
       </a>
 
-            <a class="work-item" href="project-iwant2.html">
-        <div class="work-title">Know it All with IWant® TV Ad</div>
-        <div class="work-thumb">
-          <img class="thumb-still" src="iwant-commercial2.png" alt="3D Tracking" loading="lazy"/>
-          <video class="thumb-video" loop muted playsinline preload="none"><source src="iwant-commercial2.webm" type="video/webm"/></video>
-        </div>
-        <div class="work-caption"><span class="work-type">Screen Replacement VFX / Motion Graphics</span></div>
-      </a>
 
-      <a class="work-item" href="project-rotoscope.html">
-        <div class="work-title">Beti Animated Story</div>
+      <a class="work-item" href="project-codeathon-hp.html">
+        <div class="work-title">Codeathon 2025</div>
         <div class="work-thumb">
-          <img class="thumb-still" src="rotoscope.png" alt="Hand Animation" loading="lazy"/>
-          <video class="thumb-video" loop muted playsinline preload="none"><source src="rotoscope-thumb.webm" type="video/webm"/></video>
+          <img class="thumb-still" src="codeathon-hp.png" alt="VFX Tracking / Mograph" loading="lazy"/>
+          <video class="thumb-video" loop muted playsinline preload="none"><source src="codeathon-hp-thumb.webm" type="video/webm"/></video>
         </div>
-        <div class="work-caption"><span class="work-type">Hand Animation</span></div>
+        <div class="work-caption"><span class="work-type">VFX, Rigging, Animation</span></div>
       </a>
 
       <a class="work-item" href="project-codeathon-ar.html">
