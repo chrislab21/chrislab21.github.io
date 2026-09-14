@@ -142,6 +142,7 @@ button { font: inherit; }
     padding: 14px 0;
     width: 100%;
     border-bottom: 1px solid var(--accent);
+    color: var(--black);
   }
 
   .header-nav a:last-child {
@@ -191,22 +192,27 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 .work-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 26px 22px;
+  gap: 13px 11px;
   padding: 0 0 90px;
 }
 
 .work-item {
-  display: block;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
   text-decoration: none;
   color: inherit;
   min-width: 0;
 }
 
 .work-thumb {
+  grid-row: 2;
   position: relative;
   aspect-ratio: 16/9;
   overflow: hidden;
   background: var(--orange);
+  border-radius: 15px;
+  margin-top: 0;
 }
 
 .work-thumb img, .work-thumb video {
@@ -234,15 +240,16 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
   justify-content: space-between; 
   align-items: baseline; 
   gap: 10px; 
-  margin-top: 12px; 
+  margin-top: 0; 
 }
 
 .work-title { 
+  grid-row: 1;
   font-family: var(--font-display);
   font-size: 1.2rem; 
   font-weight: 600; 
   transition: color 0.2s; 
-  margin: 0 0 10px 0;
+  margin: 0 0 0 0;
 }
 
 .work-item:hover .work-title { 
@@ -250,12 +257,13 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 }
 
 .work-type { 
+  grid-row: 3;
   font-family: var(--font-body);
   font-size: 0.90rem; 
   font-weight: 600;
   color: var(--green); 
-  white-space: nowrap; 
-  text-align: right;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 /* ═══════════════════════════════════════
@@ -271,6 +279,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
   gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   justify-content: space-between;
+  border-radius: 15px;
 }
 
 .play-item {
@@ -282,19 +291,28 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
   */
   object-fit: cover;
   width: 100%;
+  border-radius: 15px;
+}
+
+.thumb-still {
+  border-radius: 15px;
 }
 
 .placeholder-thumb {
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  border-radius: 15px;
 }
 .placeholder-thumb span {
   font-size: 0.8rem;
   color: var(--orange);
   font-weight: 600;
   letter-spacing: 0.04em;
+  border-radius: 15px;
 }
 .placeholder-caption { margin-top: 12px; }
-.placeholder-caption .work-title { color: var(--green); }
+.placeholder-caption .work-title { color: var(--white); }
 
 /* ═══════════════════════════════════════
    REEL PAGE
@@ -432,6 +450,10 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
   .work-title {
     font-size: 1.2rem;
   }
+
+  .work-type {
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -442,4 +464,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
   .stat:last-child { border-bottom: none; }
   .header-nav { gap: 16px; }
   .project-meta { flex-wrap: wrap; gap: 24px; }
+  .work-type {
+    margin-bottom: 0;
+  }
 }
