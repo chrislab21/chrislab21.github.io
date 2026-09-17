@@ -2,11 +2,11 @@
    BASE
 ═══════════════════════════════════════ */
 :root {
-  --white:     #e9e6dc;
+  --white:     #fff8f3;
   --black:     #090e08;
-  --green:     #7cb689;
-  --orange:    #dd8a6f;
-  --accent:    #D14517;
+  --green:     #0ac900;
+  --orange:    #ff9406;
+  --accent:    #d14517;
 
   --font-display: 'Bricolage Grotesque', sans-serif;
   --font-body:    'utendo', sans-serif;
