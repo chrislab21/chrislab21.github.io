@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── REEL EMBED (reel page) ──
   const reelBtn = document.getElementById('reelPlayBtn');
   const reelWrap = document.getElementById('reelWrap');
-  const REEL_URL = 'https://player.vimeo.com/video/1187817817?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1';
+  const REEL_URL = 'https://player.vimeo.com/video/1187817817?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&muted=0';
   if (reelBtn && reelWrap) {
     reelBtn.addEventListener('click', () => {
       const iframe = document.createElement('iframe');
