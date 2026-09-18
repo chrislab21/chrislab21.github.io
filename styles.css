@@ -4,11 +4,11 @@
 :root {
   --white:     #fff8f3;
   --black:     #090e08;
-  --green:     #0ac900;
+  --green:     #44cf6c;
   --orange:    #ff9406;
   --accent:    #d14517;
 
-  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-display: 'Forma DJR Micro', sans-serif;
   --font-body:    'utendo', sans-serif;
 }
 
@@ -96,6 +96,8 @@ button { font: inherit; }
   letter-spacing: -0.01em;
   color: var(--white);
   text-decoration: none;
+  width: 250px;
+  height: auto;
 }
 
 .header-nav {
@@ -121,6 +123,10 @@ button { font: inherit; }
 
   .header-title {
     font-size: 0.90rem;
+  }
+
+  .header-name {
+    width: 25%;
   }
 
   .header-nav {
@@ -317,7 +323,7 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 /* ═══════════════════════════════════════
    REEL PAGE
 ═══════════════════════════════════════ */
-.reel-section { padding: 56px 0 50px; }
+.reel-section { padding: 5px 0 50px; }
 
 
 .reel-text {
@@ -325,13 +331,14 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
   display: flex;
   justify-content: center;
   padding-top: 10px;
+
   margin-bottom: -20px;
 }
 
 .reel-frame {
   position: relative;
   width: 100%;
-  max-width: 980px;
+  max-width: 720px;
   margin: 0 auto;
   aspect-ratio: 16/9;
   background: var(--black);
@@ -453,6 +460,10 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 
   .work-type {
     margin-bottom: 12px;
+  }
+
+  .reel-frame{
+    width: 100%;
   }
 }
 
